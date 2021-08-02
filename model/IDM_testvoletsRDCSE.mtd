@@ -1,0 +1,710 @@
+
+ Meters for 61,ECLAIRAGE_ZCH1:Lights Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZCH1 [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:ZCH1 [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 136,ECLAIRAGE_ZCH2:Lights Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZCH2 [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:ZCH2 [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 163,ECLAIRAGE_RDC_CUISINE:Lights Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:RDC THERMAL ZONE [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:RDC THERMAL ZONE [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 190,ECLAIRAGE_ZSDB:Lights Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZSDB [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:ZSDB [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 217,ECLAIRAGE_ZCH3:Lights Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZCH3 [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:ZCH3 [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 244,ECLAIRAGE_RDC_SEJOUR:Lights Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:RDC THERMAL ZONE [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:RDC THERMAL ZONE [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 245,EQUIPEMENTS_RDC:Other Equipment Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:RDC THERMAL ZONE [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:RDC THERMAL ZONE [J]
+  OnMeter=General:InteriorEquipment:Electricity [J]
+
+ Meters for 283,EQUIPEMENTS_SDB:Other Equipment Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZSDB [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:ZSDB [J]
+  OnMeter=General:InteriorEquipment:Electricity [J]
+
+ Meters for 665,COMBLE THERMAL ZONE:Zone Ventilation Fan Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:COMBLE THERMAL ZONE [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=Fans:Electricity:Zone:COMBLE THERMAL ZONE [J]
+  OnMeter=Ventilation (simple):Fans:Electricity [J]
+
+ Meters for 714,VS THERMAL ZONE:Zone Ventilation Fan Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:VS THERMAL ZONE [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=Fans:Electricity:Zone:VS THERMAL ZONE [J]
+  OnMeter=Ventilation (simple):Fans:Electricity [J]
+
+ Meters for 739,RDC THERMAL ZONE:Zone Ventilation Fan Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:RDC THERMAL ZONE [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=Fans:Electricity:Zone:RDC THERMAL ZONE [J]
+  OnMeter=Ventilation (simple):Fans:Electricity [J]
+
+ Meters for 752,ZCH1:Zone Ventilation Fan Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZCH1 [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=Fans:Electricity:Zone:ZCH1 [J]
+  OnMeter=Ventilation (simple):Fans:Electricity [J]
+
+ Meters for 765,ZCH2:Zone Ventilation Fan Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZCH2 [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=Fans:Electricity:Zone:ZCH2 [J]
+  OnMeter=Ventilation (simple):Fans:Electricity [J]
+
+ Meters for 778,ZCH3:Zone Ventilation Fan Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZCH3 [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=Fans:Electricity:Zone:ZCH3 [J]
+  OnMeter=Ventilation (simple):Fans:Electricity [J]
+
+ Meters for 791,ZSDB:Zone Ventilation Fan Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZSDB [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=Fans:Electricity:Zone:ZSDB [J]
+  OnMeter=Ventilation (simple):Fans:Electricity [J]
+
+ Meters for 804,RDC THERMAL ZONE:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:RDC THERMAL ZONE [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:RDC THERMAL ZONE [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+
+ Meters for 877,RDC THERMAL ZONE:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:RDC THERMAL ZONE [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:RDC THERMAL ZONE [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+
+ Meters for 916,VS THERMAL ZONE:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:VS THERMAL ZONE [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:VS THERMAL ZONE [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+
+ Meters for 941,VS THERMAL ZONE:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:VS THERMAL ZONE [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:VS THERMAL ZONE [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+
+ Meters for 956,COMBLE THERMAL ZONE:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:COMBLE THERMAL ZONE [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:COMBLE THERMAL ZONE [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+
+ Meters for 981,COMBLE THERMAL ZONE:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:COMBLE THERMAL ZONE [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:COMBLE THERMAL ZONE [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+
+ Meters for 996,ZCH1:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZCH1 [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:ZCH1 [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+
+ Meters for 1021,ZCH1:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZCH1 [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:ZCH1 [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+
+ Meters for 1036,ZCH2:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZCH2 [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:ZCH2 [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+
+ Meters for 1061,ZCH2:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZCH2 [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:ZCH2 [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+
+ Meters for 1076,ZCH3:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZCH3 [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:ZCH3 [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+
+ Meters for 1101,ZCH3:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZCH3 [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:ZCH3 [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+
+ Meters for 1116,ZSDB:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZSDB [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:ZSDB [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+
+ Meters for 1141,ZSDB:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZSDB [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:ZSDB [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+
+ Meters for 1158,RDC THERMAL ZONE IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy [J]
+  OnMeter=DistrictHeating:Facility [J]
+  OnMeter=DistrictHeating:HVAC [J]
+  OnMeter=Heating:DistrictHeating [J]
+  OnMeter=General:Heating:DistrictHeating [J]
+
+ Meters for 1207,RDC THERMAL ZONE IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy [J]
+  OnMeter=DistrictCooling:Facility [J]
+  OnMeter=DistrictCooling:HVAC [J]
+  OnMeter=Cooling:DistrictCooling [J]
+  OnMeter=General:Cooling:DistrictCooling [J]
+
+ Meters for 1256,ZCH1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy [J]
+  OnMeter=DistrictHeating:Facility [J]
+  OnMeter=DistrictHeating:HVAC [J]
+  OnMeter=Heating:DistrictHeating [J]
+  OnMeter=General:Heating:DistrictHeating [J]
+
+ Meters for 1257,ZCH1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy [J]
+  OnMeter=DistrictCooling:Facility [J]
+  OnMeter=DistrictCooling:HVAC [J]
+  OnMeter=Cooling:DistrictCooling [J]
+  OnMeter=General:Cooling:DistrictCooling [J]
+
+ Meters for 1258,ZCH2 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy [J]
+  OnMeter=DistrictHeating:Facility [J]
+  OnMeter=DistrictHeating:HVAC [J]
+  OnMeter=Heating:DistrictHeating [J]
+  OnMeter=General:Heating:DistrictHeating [J]
+
+ Meters for 1259,ZCH2 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy [J]
+  OnMeter=DistrictCooling:Facility [J]
+  OnMeter=DistrictCooling:HVAC [J]
+  OnMeter=Cooling:DistrictCooling [J]
+  OnMeter=General:Cooling:DistrictCooling [J]
+
+ Meters for 1260,ZCH3 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy [J]
+  OnMeter=DistrictHeating:Facility [J]
+  OnMeter=DistrictHeating:HVAC [J]
+  OnMeter=Heating:DistrictHeating [J]
+  OnMeter=General:Heating:DistrictHeating [J]
+
+ Meters for 1261,ZCH3 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy [J]
+  OnMeter=DistrictCooling:Facility [J]
+  OnMeter=DistrictCooling:HVAC [J]
+  OnMeter=Cooling:DistrictCooling [J]
+  OnMeter=General:Cooling:DistrictCooling [J]
+
+ Meters for 1262,ZSDB IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy [J]
+  OnMeter=DistrictHeating:Facility [J]
+  OnMeter=DistrictHeating:HVAC [J]
+  OnMeter=Heating:DistrictHeating [J]
+  OnMeter=General:Heating:DistrictHeating [J]
+
+ Meters for 1263,ZSDB IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy [J]
+  OnMeter=DistrictCooling:Facility [J]
+  OnMeter=DistrictCooling:HVAC [J]
+  OnMeter=Cooling:DistrictCooling [J]
+  OnMeter=General:Cooling:DistrictCooling [J]
+
+ Meters for 1264,Whole Building:Facility Total Purchased Electricity Energy [J]
+  OnMeter=ElectricityPurchased:Facility [J]
+  OnMeter=ElectricityPurchased:Plant [J]
+  OnMeter=Cogeneration:ElectricityPurchased [J]
+  OnMeter=General:Cogeneration:ElectricityPurchased [J]
+
+ Meters for 1313,Whole Building:Facility Total Surplus Electricity Energy [J]
+  OnMeter=ElectricitySurplusSold:Facility [J]
+  OnMeter=ElectricitySurplusSold:Plant [J]
+  OnMeter=Cogeneration:ElectricitySurplusSold [J]
+  OnMeter=General:Cogeneration:ElectricitySurplusSold [J]
+
+ Meters for 1362,Whole Building:Facility Net Purchased Electricity Energy [J]
+  OnMeter=ElectricityNet:Facility [J]
+  OnMeter=ElectricityNet:Plant [J]
+  OnMeter=Cogeneration:ElectricityNet [J]
+  OnMeter=General:Cogeneration:ElectricityNet [J]
+
+ Meters for 1467,Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 1492,Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 1493,Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ For Meter=Electricity:Facility [J], ResourceType=Electricity, contents are:
+  ECLAIRAGE_ZCH1:Lights Electricity Energy
+  ECLAIRAGE_ZCH2:Lights Electricity Energy
+  ECLAIRAGE_RDC_CUISINE:Lights Electricity Energy
+  ECLAIRAGE_ZSDB:Lights Electricity Energy
+  ECLAIRAGE_ZCH3:Lights Electricity Energy
+  ECLAIRAGE_RDC_SEJOUR:Lights Electricity Energy
+  EQUIPEMENTS_RDC:Other Equipment Electricity Energy
+  EQUIPEMENTS_SDB:Other Equipment Electricity Energy
+  COMBLE THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+  VS THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+  RDC THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+  ZCH1:Zone Ventilation Fan Electricity Energy
+  ZCH2:Zone Ventilation Fan Electricity Energy
+  ZCH3:Zone Ventilation Fan Electricity Energy
+  ZSDB:Zone Ventilation Fan Electricity Energy
+
+ For Meter=Electricity:Building [J], ResourceType=Electricity, Group=Building, contents are:
+  ECLAIRAGE_ZCH1:Lights Electricity Energy
+  ECLAIRAGE_ZCH2:Lights Electricity Energy
+  ECLAIRAGE_RDC_CUISINE:Lights Electricity Energy
+  ECLAIRAGE_ZSDB:Lights Electricity Energy
+  ECLAIRAGE_ZCH3:Lights Electricity Energy
+  ECLAIRAGE_RDC_SEJOUR:Lights Electricity Energy
+  EQUIPEMENTS_RDC:Other Equipment Electricity Energy
+  EQUIPEMENTS_SDB:Other Equipment Electricity Energy
+  COMBLE THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+  VS THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+  RDC THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+  ZCH1:Zone Ventilation Fan Electricity Energy
+  ZCH2:Zone Ventilation Fan Electricity Energy
+  ZCH3:Zone Ventilation Fan Electricity Energy
+  ZSDB:Zone Ventilation Fan Electricity Energy
+
+ For Meter=Electricity:Zone:ZCH1 [J], ResourceType=Electricity, Group=Zone, contents are:
+  ECLAIRAGE_ZCH1:Lights Electricity Energy
+  ZCH1:Zone Ventilation Fan Electricity Energy
+
+ For Meter=InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  ECLAIRAGE_ZCH1:Lights Electricity Energy
+  ECLAIRAGE_ZCH2:Lights Electricity Energy
+  ECLAIRAGE_RDC_CUISINE:Lights Electricity Energy
+  ECLAIRAGE_ZSDB:Lights Electricity Energy
+  ECLAIRAGE_ZCH3:Lights Electricity Energy
+  ECLAIRAGE_RDC_SEJOUR:Lights Electricity Energy
+
+ For Meter=InteriorLights:Electricity:Zone:ZCH1 [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  ECLAIRAGE_ZCH1:Lights Electricity Energy
+
+ For Meter=General:InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  ECLAIRAGE_ZCH1:Lights Electricity Energy
+  ECLAIRAGE_ZCH2:Lights Electricity Energy
+  ECLAIRAGE_RDC_CUISINE:Lights Electricity Energy
+  ECLAIRAGE_ZSDB:Lights Electricity Energy
+  ECLAIRAGE_ZCH3:Lights Electricity Energy
+  ECLAIRAGE_RDC_SEJOUR:Lights Electricity Energy
+
+ For Meter=Electricity:Zone:ZCH2 [J], ResourceType=Electricity, Group=Zone, contents are:
+  ECLAIRAGE_ZCH2:Lights Electricity Energy
+  ZCH2:Zone Ventilation Fan Electricity Energy
+
+ For Meter=InteriorLights:Electricity:Zone:ZCH2 [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  ECLAIRAGE_ZCH2:Lights Electricity Energy
+
+ For Meter=Electricity:Zone:RDC THERMAL ZONE [J], ResourceType=Electricity, Group=Zone, contents are:
+  ECLAIRAGE_RDC_CUISINE:Lights Electricity Energy
+  ECLAIRAGE_RDC_SEJOUR:Lights Electricity Energy
+  EQUIPEMENTS_RDC:Other Equipment Electricity Energy
+  RDC THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+
+ For Meter=InteriorLights:Electricity:Zone:RDC THERMAL ZONE [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  ECLAIRAGE_RDC_CUISINE:Lights Electricity Energy
+  ECLAIRAGE_RDC_SEJOUR:Lights Electricity Energy
+
+ For Meter=Electricity:Zone:ZSDB [J], ResourceType=Electricity, Group=Zone, contents are:
+  ECLAIRAGE_ZSDB:Lights Electricity Energy
+  EQUIPEMENTS_SDB:Other Equipment Electricity Energy
+  ZSDB:Zone Ventilation Fan Electricity Energy
+
+ For Meter=InteriorLights:Electricity:Zone:ZSDB [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  ECLAIRAGE_ZSDB:Lights Electricity Energy
+
+ For Meter=Electricity:Zone:ZCH3 [J], ResourceType=Electricity, Group=Zone, contents are:
+  ECLAIRAGE_ZCH3:Lights Electricity Energy
+  ZCH3:Zone Ventilation Fan Electricity Energy
+
+ For Meter=InteriorLights:Electricity:Zone:ZCH3 [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  ECLAIRAGE_ZCH3:Lights Electricity Energy
+
+ For Meter=InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  EQUIPEMENTS_RDC:Other Equipment Electricity Energy
+  EQUIPEMENTS_SDB:Other Equipment Electricity Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:RDC THERMAL ZONE [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  EQUIPEMENTS_RDC:Other Equipment Electricity Energy
+
+ For Meter=General:InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  EQUIPEMENTS_RDC:Other Equipment Electricity Energy
+  EQUIPEMENTS_SDB:Other Equipment Electricity Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:ZSDB [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  EQUIPEMENTS_SDB:Other Equipment Electricity Energy
+
+ For Meter=Electricity:Zone:COMBLE THERMAL ZONE [J], ResourceType=Electricity, Group=Zone, contents are:
+  COMBLE THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+
+ For Meter=Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  COMBLE THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+  VS THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+  RDC THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+  ZCH1:Zone Ventilation Fan Electricity Energy
+  ZCH2:Zone Ventilation Fan Electricity Energy
+  ZCH3:Zone Ventilation Fan Electricity Energy
+  ZSDB:Zone Ventilation Fan Electricity Energy
+
+ For Meter=Fans:Electricity:Zone:COMBLE THERMAL ZONE [J], ResourceType=Electricity, EndUse=Fans, Group=Zone, contents are:
+  COMBLE THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+
+ For Meter=Ventilation (simple):Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  COMBLE THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+  VS THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+  RDC THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+  ZCH1:Zone Ventilation Fan Electricity Energy
+  ZCH2:Zone Ventilation Fan Electricity Energy
+  ZCH3:Zone Ventilation Fan Electricity Energy
+  ZSDB:Zone Ventilation Fan Electricity Energy
+
+ For Meter=Electricity:Zone:VS THERMAL ZONE [J], ResourceType=Electricity, Group=Zone, contents are:
+  VS THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+
+ For Meter=Fans:Electricity:Zone:VS THERMAL ZONE [J], ResourceType=Electricity, EndUse=Fans, Group=Zone, contents are:
+  VS THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+
+ For Meter=Fans:Electricity:Zone:RDC THERMAL ZONE [J], ResourceType=Electricity, EndUse=Fans, Group=Zone, contents are:
+  RDC THERMAL ZONE:Zone Ventilation Fan Electricity Energy
+
+ For Meter=Fans:Electricity:Zone:ZCH1 [J], ResourceType=Electricity, EndUse=Fans, Group=Zone, contents are:
+  ZCH1:Zone Ventilation Fan Electricity Energy
+
+ For Meter=Fans:Electricity:Zone:ZCH2 [J], ResourceType=Electricity, EndUse=Fans, Group=Zone, contents are:
+  ZCH2:Zone Ventilation Fan Electricity Energy
+
+ For Meter=Fans:Electricity:Zone:ZCH3 [J], ResourceType=Electricity, EndUse=Fans, Group=Zone, contents are:
+  ZCH3:Zone Ventilation Fan Electricity Energy
+
+ For Meter=Fans:Electricity:Zone:ZSDB [J], ResourceType=Electricity, EndUse=Fans, Group=Zone, contents are:
+  ZSDB:Zone Ventilation Fan Electricity Energy
+
+ For Meter=EnergyTransfer:Facility [J], ResourceType=EnergyTransfer, contents are:
+  RDC THERMAL ZONE:Zone Air System Sensible Heating Energy
+  RDC THERMAL ZONE:Zone Air System Sensible Cooling Energy
+  VS THERMAL ZONE:Zone Air System Sensible Heating Energy
+  VS THERMAL ZONE:Zone Air System Sensible Cooling Energy
+  COMBLE THERMAL ZONE:Zone Air System Sensible Heating Energy
+  COMBLE THERMAL ZONE:Zone Air System Sensible Cooling Energy
+  ZCH1:Zone Air System Sensible Heating Energy
+  ZCH1:Zone Air System Sensible Cooling Energy
+  ZCH2:Zone Air System Sensible Heating Energy
+  ZCH2:Zone Air System Sensible Cooling Energy
+  ZCH3:Zone Air System Sensible Heating Energy
+  ZCH3:Zone Air System Sensible Cooling Energy
+  ZSDB:Zone Air System Sensible Heating Energy
+  ZSDB:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Building [J], ResourceType=EnergyTransfer, Group=Building, contents are:
+  RDC THERMAL ZONE:Zone Air System Sensible Heating Energy
+  RDC THERMAL ZONE:Zone Air System Sensible Cooling Energy
+  VS THERMAL ZONE:Zone Air System Sensible Heating Energy
+  VS THERMAL ZONE:Zone Air System Sensible Cooling Energy
+  COMBLE THERMAL ZONE:Zone Air System Sensible Heating Energy
+  COMBLE THERMAL ZONE:Zone Air System Sensible Cooling Energy
+  ZCH1:Zone Air System Sensible Heating Energy
+  ZCH1:Zone Air System Sensible Cooling Energy
+  ZCH2:Zone Air System Sensible Heating Energy
+  ZCH2:Zone Air System Sensible Cooling Energy
+  ZCH3:Zone Air System Sensible Heating Energy
+  ZCH3:Zone Air System Sensible Cooling Energy
+  ZSDB:Zone Air System Sensible Heating Energy
+  ZSDB:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:RDC THERMAL ZONE [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  RDC THERMAL ZONE:Zone Air System Sensible Heating Energy
+  RDC THERMAL ZONE:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Heating, contents are:
+  RDC THERMAL ZONE:Zone Air System Sensible Heating Energy
+  VS THERMAL ZONE:Zone Air System Sensible Heating Energy
+  COMBLE THERMAL ZONE:Zone Air System Sensible Heating Energy
+  ZCH1:Zone Air System Sensible Heating Energy
+  ZCH2:Zone Air System Sensible Heating Energy
+  ZCH3:Zone Air System Sensible Heating Energy
+  ZSDB:Zone Air System Sensible Heating Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:RDC THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  RDC THERMAL ZONE:Zone Air System Sensible Heating Energy
+
+ For Meter=General:Heating:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Heating, contents are:
+  RDC THERMAL ZONE:Zone Air System Sensible Heating Energy
+  VS THERMAL ZONE:Zone Air System Sensible Heating Energy
+  COMBLE THERMAL ZONE:Zone Air System Sensible Heating Energy
+  ZCH1:Zone Air System Sensible Heating Energy
+  ZCH2:Zone Air System Sensible Heating Energy
+  ZCH3:Zone Air System Sensible Heating Energy
+  ZSDB:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Cooling, contents are:
+  RDC THERMAL ZONE:Zone Air System Sensible Cooling Energy
+  VS THERMAL ZONE:Zone Air System Sensible Cooling Energy
+  COMBLE THERMAL ZONE:Zone Air System Sensible Cooling Energy
+  ZCH1:Zone Air System Sensible Cooling Energy
+  ZCH2:Zone Air System Sensible Cooling Energy
+  ZCH3:Zone Air System Sensible Cooling Energy
+  ZSDB:Zone Air System Sensible Cooling Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:RDC THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  RDC THERMAL ZONE:Zone Air System Sensible Cooling Energy
+
+ For Meter=General:Cooling:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Cooling, contents are:
+  RDC THERMAL ZONE:Zone Air System Sensible Cooling Energy
+  VS THERMAL ZONE:Zone Air System Sensible Cooling Energy
+  COMBLE THERMAL ZONE:Zone Air System Sensible Cooling Energy
+  ZCH1:Zone Air System Sensible Cooling Energy
+  ZCH2:Zone Air System Sensible Cooling Energy
+  ZCH3:Zone Air System Sensible Cooling Energy
+  ZSDB:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:VS THERMAL ZONE [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  VS THERMAL ZONE:Zone Air System Sensible Heating Energy
+  VS THERMAL ZONE:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:VS THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  VS THERMAL ZONE:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:VS THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  VS THERMAL ZONE:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:COMBLE THERMAL ZONE [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  COMBLE THERMAL ZONE:Zone Air System Sensible Heating Energy
+  COMBLE THERMAL ZONE:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:COMBLE THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  COMBLE THERMAL ZONE:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:COMBLE THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  COMBLE THERMAL ZONE:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:ZCH1 [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  ZCH1:Zone Air System Sensible Heating Energy
+  ZCH1:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:ZCH1 [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  ZCH1:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:ZCH1 [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  ZCH1:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:ZCH2 [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  ZCH2:Zone Air System Sensible Heating Energy
+  ZCH2:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:ZCH2 [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  ZCH2:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:ZCH2 [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  ZCH2:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:ZCH3 [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  ZCH3:Zone Air System Sensible Heating Energy
+  ZCH3:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:ZCH3 [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  ZCH3:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:ZCH3 [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  ZCH3:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:ZSDB [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  ZSDB:Zone Air System Sensible Heating Energy
+  ZSDB:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:ZSDB [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  ZSDB:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:ZSDB [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  ZSDB:Zone Air System Sensible Cooling Energy
+
+ For Meter=DistrictHeating:Facility [J], ResourceType=DistrictHeating, contents are:
+  RDC THERMAL ZONE IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZCH1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZCH2 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZCH3 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZSDB IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+
+ For Meter=DistrictHeating:HVAC [J], ResourceType=DistrictHeating, Group=HVAC, contents are:
+  RDC THERMAL ZONE IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZCH1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZCH2 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZCH3 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZSDB IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+
+ For Meter=Heating:DistrictHeating [J], ResourceType=DistrictHeating, EndUse=Heating, contents are:
+  RDC THERMAL ZONE IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZCH1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZCH2 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZCH3 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZSDB IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+
+ For Meter=General:Heating:DistrictHeating [J], ResourceType=DistrictHeating, EndUse=Heating, contents are:
+  RDC THERMAL ZONE IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZCH1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZCH2 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZCH3 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+  ZSDB IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+
+ For Meter=DistrictCooling:Facility [J], ResourceType=DistrictCooling, contents are:
+  RDC THERMAL ZONE IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZCH1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZCH2 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZCH3 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZSDB IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+
+ For Meter=DistrictCooling:HVAC [J], ResourceType=DistrictCooling, Group=HVAC, contents are:
+  RDC THERMAL ZONE IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZCH1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZCH2 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZCH3 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZSDB IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+
+ For Meter=Cooling:DistrictCooling [J], ResourceType=DistrictCooling, EndUse=Cooling, contents are:
+  RDC THERMAL ZONE IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZCH1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZCH2 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZCH3 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZSDB IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+
+ For Meter=General:Cooling:DistrictCooling [J], ResourceType=DistrictCooling, EndUse=Cooling, contents are:
+  RDC THERMAL ZONE IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZCH1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZCH2 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZCH3 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+  ZSDB IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+
+ For Meter=ElectricityPurchased:Facility [J], ResourceType=ElectricityPurchased, contents are:
+  Whole Building:Facility Total Purchased Electricity Energy
+
+ For Meter=ElectricityPurchased:Plant [J], ResourceType=ElectricityPurchased, Group=Plant, contents are:
+  Whole Building:Facility Total Purchased Electricity Energy
+
+ For Meter=Cogeneration:ElectricityPurchased [J], ResourceType=ElectricityPurchased, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Purchased Electricity Energy
+
+ For Meter=General:Cogeneration:ElectricityPurchased [J], ResourceType=ElectricityPurchased, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Purchased Electricity Energy
+
+ For Meter=ElectricitySurplusSold:Facility [J], ResourceType=ElectricitySurplusSold, contents are:
+  Whole Building:Facility Total Surplus Electricity Energy
+
+ For Meter=ElectricitySurplusSold:Plant [J], ResourceType=ElectricitySurplusSold, Group=Plant, contents are:
+  Whole Building:Facility Total Surplus Electricity Energy
+
+ For Meter=Cogeneration:ElectricitySurplusSold [J], ResourceType=ElectricitySurplusSold, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Surplus Electricity Energy
+
+ For Meter=General:Cogeneration:ElectricitySurplusSold [J], ResourceType=ElectricitySurplusSold, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Surplus Electricity Energy
+
+ For Meter=ElectricityNet:Facility [J], ResourceType=ElectricityNet, contents are:
+  Whole Building:Facility Net Purchased Electricity Energy
+
+ For Meter=ElectricityNet:Plant [J], ResourceType=ElectricityNet, Group=Plant, contents are:
+  Whole Building:Facility Net Purchased Electricity Energy
+
+ For Meter=Cogeneration:ElectricityNet [J], ResourceType=ElectricityNet, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Net Purchased Electricity Energy
+
+ For Meter=General:Cogeneration:ElectricityNet [J], ResourceType=ElectricityNet, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Net Purchased Electricity Energy
+
+ For Meter=Carbon Equivalent:Facility [kg], ResourceType=Carbon Equivalent, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass
+
+ For Meter=CarbonEquivalentEmissions:Carbon Equivalent [kg], ResourceType=Carbon Equivalent, EndUse=CarbonEquivalentEmissions, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass
