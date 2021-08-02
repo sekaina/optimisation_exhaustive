@@ -20,7 +20,7 @@ import pickle
 import os
 
 import config
-from evaluationEP import evaluation
+from fitnessesEP import evaluate
 
 from path import Path
 
@@ -91,7 +91,7 @@ def init_opti():
     toolbox.register("population", tools.initRepeat, list, toolbox.individual)#deap.tools.initRepeat(container, func, n) 
                                                                             #Call the function func n times and return the results in a container type container
 
-    toolbox.register("evaluate", evaluation)
+    toolbox.register("evaluate", evaluate)
     toolbox.register("mate", tools.cxOnePoint)
     toolbox.register("matep", tools.cxUniformPartialyMatched, indpb=0)
     toolbox.register("mutate", tools.mutUniformInt, low=[x[0] for x in BOUNDS],
