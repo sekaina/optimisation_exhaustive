@@ -2,6 +2,12 @@
 # -*- coding: utf-8 -*-
 import random
 random.seed(10)
+from itertools import repeat
+
+try:
+    from collections.abc import Sequence
+except ImportError:
+    from collections import Sequence
 import time
 import datetime
 import multiprocessing
@@ -61,7 +67,35 @@ def init_indp(icls, ranges, genome=list()):
         genome.append(np.random.randint(*ranges[nparam-1]))#origine random.randint
     return icls(genome)
 
-
+def mutation(individual, low, up, indpb):
+    """modified from the original mutUniformInt in deap.tools to have attributes with step=5 for thickness insolation
+    Mutate an individual by replacing attributes, with probability *indpb*,
+    by a integer uniformly drawn between *low* and *up* inclusively.
+    :param individual: :term:`Sequence <sequence>` individual to be mutated.
+    :param low: The lower bound or a :term:`python:sequence` of
+                of lower bounds of the range from which to draw the new
+                integer.
+    :param up: The upper bound or a :term:`python:sequence` of
+               of upper bounds of the range from which to draw the new
+               integer.
+    :param indpb: Independent probability for each attribute to be mutated.
+    :returns: A tuple of one individual.
+    """
+    size = len(individual)
+    if not isinstance(low, Sequence):
+        low = repeat(low, size)
+    elif len(low) < size:
+        raise IndexError("low must be at least the size of individual: %d < %d" % (len(low), size))
+    if not isinstance(up, Sequence):
+        up = repeat(up, size)
+    elif len(up) < size:
+        raise IndexError("up must be at least the size of individual: %d < %d" % (len(up), size))
+    for i, xl, xu in zip(range(size-1), low, up):
+        if random.random() < indpb:
+            individual[i] = random.randrange(xl, xu, 5)
+    if random.random() < indpb:
+        individual[size-1]=random.randint(low[size-1],up[size-1])
+    return individual
 def init_opti():
     """
     creation of the toolboxes objects that defines
@@ -94,7 +128,7 @@ def init_opti():
     toolbox.register("evaluate", evaluate)
     toolbox.register("mate", tools.cxOnePoint)
     toolbox.register("matep", tools.cxUniformPartialyMatched, indpb=0)
-    toolbox.register("mutate", tools.mutUniformInt, low=[x[0] for x in BOUNDS],
+    toolbox.register("mutate", mutation, low=[x[0] for x in BOUNDS], #tools.mutUniformInt
                      up=[x[1] for x in BOUNDS], indpb=1 / NPARAM)
     toolbox.register("mutatep", tools.mutShuffleIndexes, indpb=1 / NPARAM)
 
@@ -295,7 +329,7 @@ def write_pareto(pareto, everyindiv, data):
             front.write(str(line) + "\n")
     fct_objectif = pd.DataFrame([dict(vals=ind, fitness=ind.fitness.values)
                           for ind in pareto])
-    with open("fct_objectif.csv", "a") as f:
+    with open("fct_objectif.csv", "w") as f:
         fct_objectif.to_csv(f, header=False)
     with open("./results/data" + s_replace + ".txt", "w") as front:
         for ind in data:
