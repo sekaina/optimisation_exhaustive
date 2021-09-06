@@ -47,3 +47,17 @@ Thumbs.db
 .vs
 Results_To_Plot
 __pycache__
+*.mdd
+*.rdd
+*.shd
+*.audit
+*.bnd
+*.eio
+*.eso
+*.err
+*.mtd
+*.mtr
+*table.csv
+*table.html
+*meter.csv
+*.rvaudit

@@ -799,7 +799,7 @@ Schedule:Year,
     31;                      !- End Day 1
 
 Schedule:Year,
-    Sdb_Occupants,           !- Name
+    ZSdb_Occupants,          !- Name
     Any Number,              !- Schedule Type Limits Name
     Sdb_Occupants,           !- Schedule:Week Name 1
     1,                       !- Start Month 1
@@ -808,7 +808,7 @@ Schedule:Year,
     31;                      !- End Day 1
 
 Schedule:Year,
-    Ch1_Occupants,           !- Name
+    ZCh1_Occupants,          !- Name
     Any Number,              !- Schedule Type Limits Name
     Ch1_Occupants,           !- Schedule:Week Name 1
     1,                       !- Start Month 1
@@ -817,7 +817,7 @@ Schedule:Year,
     31;                      !- End Day 1
 
 Schedule:Year,
-    Ch1_Chauffage,           !- Name
+    ZCh1_Chauffage,          !- Name
     Any Number,              !- Schedule Type Limits Name
     Ch1_Chauffage,           !- Schedule:Week Name 1
     1,                       !- Start Month 1
@@ -835,7 +835,7 @@ Schedule:Year,
     31;                      !- End Day 1
 
 Schedule:Year,
-    Sdb_Chauffage,           !- Name
+    ZSdb_Chauffage,          !- Name
     Any Number,              !- Schedule Type Limits Name
     Sdb_Chauffage,           !- Schedule:Week Name 1
     1,                       !- Start Month 1
@@ -844,7 +844,7 @@ Schedule:Year,
     31;                      !- End Day 1
 
 Schedule:Year,
-    Ch2_Occupants,           !- Name
+    ZCh2_Occupants,          !- Name
     Any Number,              !- Schedule Type Limits Name
     Ch2_Occupants,           !- Schedule:Week Name 1
     1,                       !- Start Month 1
@@ -879,6 +879,33 @@ Schedule:Year,
     15,                      !- Start Day 3
     12,                      !- End Month 3
     31;                      !- End Day 3
+
+Schedule:Year,
+    ZCh2_Chauffage,          !- Name
+    Any Number,              !- Schedule Type Limits Name
+    Ch1_Chauffage,           !- Schedule:Week Name 1
+    1,                       !- Start Month 1
+    1,                       !- Start Day 1
+    12,                      !- End Month 1
+    31;                      !- End Day 1
+
+Schedule:Year,
+    ZCh3_Chauffage,          !- Name
+    Any Number,              !- Schedule Type Limits Name
+    Ch1_Chauffage,           !- Schedule:Week Name 1
+    1,                       !- Start Month 1
+    1,                       !- Start Day 1
+    12,                      !- End Month 1
+    31;                      !- End Day 1
+
+Schedule:Year,
+    ZCh3_Occupants,          !- Name
+    Any Number,              !- Schedule Type Limits Name
+    Ch2_Occupants,           !- Schedule:Week Name 1
+    1,                       !- Start Month 1
+    1,                       !- Start Day 1
+    12,                      !- End Month 1
+    31;                      !- End Day 1
 
 
 !-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:COMPACT ===========
@@ -4386,7 +4413,7 @@ Shading:Building:Detailed,
 People,
     Ch2_Occupants,           !- Name
     ZCh2,                    !- Zone or ZoneList Name
-    Ch2_Occupants,           !- Number of People Schedule Name
+    ZCh2_Occupants,          !- Number of People Schedule Name
     People,                  !- Number of People Calculation Method
     1,                       !- Number of People
     ,                        !- People per Zone Floor Area {person/m2}
@@ -4401,7 +4428,7 @@ People,
 People,
     Ch3_Occupants,           !- Name
     ZCh3,                    !- Zone or ZoneList Name
-    Ch2_Occupants,           !- Number of People Schedule Name
+    ZCh3_Occupants,          !- Number of People Schedule Name
     People,                  !- Number of People Calculation Method
     1,                       !- Number of People
     ,                        !- People per Zone Floor Area {person/m2}
@@ -4416,7 +4443,7 @@ People,
 People,
     Ch1_Occupants,           !- Name
     ZCh1,                    !- Zone or ZoneList Name
-    Ch1_Occupants,           !- Number of People Schedule Name
+    ZCh1_Occupants,          !- Number of People Schedule Name
     People,                  !- Number of People Calculation Method
     1,                       !- Number of People
     ,                        !- People per Zone Floor Area {person/m2}
@@ -4446,7 +4473,7 @@ People,
 People,
     Sdb_occupant,            !- Name
     ZSdb,                    !- Zone or ZoneList Name
-    Sdb_Occupants,           !- Number of People Schedule Name
+    ZSdb_Occupants,          !- Number of People Schedule Name
     People,                  !- Number of People Calculation Method
     1,                       !- Number of People
     ,                        !- People per Zone Floor Area {person/m2}
@@ -5103,14 +5130,14 @@ ZoneVentilation:WindandStackOpenArea,
 
 HVACTemplate:Thermostat,
     Consigne_ch2,            !- Name
-    Ch1_Chauffage,           !- Heating Setpoint Schedule Name
+    ZCh2_Chauffage,          !- Heating Setpoint Schedule Name
     ,                        !- Constant Heating Setpoint {C}
     ,                        !- Cooling Setpoint Schedule Name
     50;                      !- Constant Cooling Setpoint {C}
 
 HVACTemplate:Thermostat,
     Consigne_ch3,            !- Name
-    Ch1_Chauffage,           !- Heating Setpoint Schedule Name
+    ZCh3_Chauffage,          !- Heating Setpoint Schedule Name
     ,                        !- Constant Heating Setpoint {C}
     ,                        !- Cooling Setpoint Schedule Name
     50;                      !- Constant Cooling Setpoint {C}
@@ -5124,14 +5151,14 @@ HVACTemplate:Thermostat,
 
 HVACTemplate:Thermostat,
     Consigne_ch1,            !- Name
-    Ch1_Chauffage,           !- Heating Setpoint Schedule Name
+    ZCh1_Chauffage,          !- Heating Setpoint Schedule Name
     ,                        !- Constant Heating Setpoint {C}
     ,                        !- Cooling Setpoint Schedule Name
     50;                      !- Constant Cooling Setpoint {C}
 
 HVACTemplate:Thermostat,
     Consigne_sdb,            !- Name
-    Sdb_Chauffage,           !- Heating Setpoint Schedule Name
+    ZSdb_Chauffage,          !- Heating Setpoint Schedule Name
     ,                        !- Constant Heating Setpoint {C}
     ,                        !- Cooling Setpoint Schedule Name
     50;                      !- Constant Cooling Setpoint {C}
@@ -5278,6 +5305,122 @@ HVACTemplate:Zone:IdealLoadsAirSystem,
     ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
     ,                        !- Design Specification Outdoor Air Object Name
     ;                        !- Demand Controlled Ventilation Type
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ENERGYMANAGEMENTSYSTEM:SENSOR ===========
+
+EnergyManagementSystem:Sensor,
+    occ_RDC,                 !- Name
+    RDC_Occupants,           !- Output:Variable or Output:Meter Index Key Name
+    Schedule Value;          !- Output:Variable or Output:Meter Name
+
+EnergyManagementSystem:Sensor,
+    occ_ZSdb,                !- Name
+    ZSdb_Occupants,          !- Output:Variable or Output:Meter Index Key Name
+    Schedule Value;          !- Output:Variable or Output:Meter Name
+
+EnergyManagementSystem:Sensor,
+    occ_ZCh1,                !- Name
+    ZCh1_Occupants,          !- Output:Variable or Output:Meter Index Key Name
+    Schedule Value;          !- Output:Variable or Output:Meter Name
+
+EnergyManagementSystem:Sensor,
+    occ_ZCh2,                !- Name
+    ZCh2_Occupants,          !- Output:Variable or Output:Meter Index Key Name
+    Schedule Value;          !- Output:Variable or Output:Meter Name
+
+EnergyManagementSystem:Sensor,
+    occ_ZCh3,                !- Name
+    ZCh3_Occupants,          !- Output:Variable or Output:Meter Index Key Name
+    Schedule Value;          !- Output:Variable or Output:Meter Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ENERGYMANAGEMENTSYSTEM:ACTUATOR ===========
+
+EnergyManagementSystem:Actuator,
+    chauff_RDC_EMS,          !- Name
+    RDC_Chauffage,           !- Actuated Component Unique Name
+    schedule:year,           !- Actuated Component Type
+    schedule value;          !- Actuated Component Control Type
+
+EnergyManagementSystem:Actuator,
+    chauff_ZSdb_EMS,         !- Name
+    ZSdb_Chauffage,          !- Actuated Component Unique Name
+    schedule:year,           !- Actuated Component Type
+    schedule value;          !- Actuated Component Control Type
+
+EnergyManagementSystem:Actuator,
+    chauff_ZCh1_EMS,         !- Name
+    ZCh1_Chauffage,          !- Actuated Component Unique Name
+    schedule:year,           !- Actuated Component Type
+    schedule value;          !- Actuated Component Control Type
+
+EnergyManagementSystem:Actuator,
+    chauff_ZCh2_EMS,         !- Name
+    ZCh2_Chauffage,          !- Actuated Component Unique Name
+    schedule:year,           !- Actuated Component Type
+    schedule value;          !- Actuated Component Control Type
+
+EnergyManagementSystem:Actuator,
+    chauff_ZCh3_EMS,         !- Name
+    ZCh3_Chauffage,          !- Actuated Component Unique Name
+    schedule:year,           !- Actuated Component Type
+    schedule value;          !- Actuated Component Control Type
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ENERGYMANAGEMENTSYSTEM:PROGRAMCALLINGMANAGER ===========
+
+EnergyManagementSystem:ProgramCallingManager,
+    consigne chauffage EMS control,  !- Name
+    BeginTimestepBeforePredictor,  !- EnergyPlus Model Calling Point
+    Set_heating_RDC,         !- Program Name 1
+    Set_heating_ZCh1,        !- Program Name 2
+    Set_heating_ZCh2,        !- Program Name 3
+    Set_heating_ZCh3,        !- Program Name 4
+    Set_heating_ZSdb;        !- Program Name 5
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ENERGYMANAGEMENTSYSTEM:PROGRAM ===========
+
+EnergyManagementSystem:Program,
+    Set_heating_RDC,         !- Name
+    IF (occ_RDC>0),          !- Program Line 1
+    Set chauff_RDC_EMS = 19, !- Program Line 2
+    ELSE,                    !- A4
+    Set chauff_RDC_EMS = 15, !- A5
+    ENDIF;                   !- A6
+
+EnergyManagementSystem:Program,
+    Set_heating_ZCh1,        !- Name
+    IF (occ_ZCh1>0),         !- Program Line 1
+    Set chauff_ZCh1_EMS = 18,!- Program Line 2
+    ELSE,                    !- A4
+    Set chauff_ZCh1_EMS = 15,!- A5
+    ENDIF;                   !- A6
+
+EnergyManagementSystem:Program,
+    Set_heating_ZSdb,        !- Name
+    IF (occ_ZSdb>0),         !- Program Line 1
+    Set chauff_ZSdb_EMS = 19,!- Program Line 2
+    ELSE,                    !- A4
+    Set chauff_ZSdb_EMS = 15,!- A5
+    ENDIF;                   !- A6
+
+EnergyManagementSystem:Program,
+    Set_heating_ZCh2,        !- Name
+    IF (occ_ZCh2>0),         !- Program Line 1
+    Set chauff_ZCh2_EMS = 18,!- Program Line 2
+    ELSE,                    !- A4
+    Set chauff_ZCh2_EMS = 15,!- A5
+    ENDIF;                   !- A6
+
+EnergyManagementSystem:Program,
+    Set_heating_ZCh3,        !- Name
+    IF (occ_ZCh3>0),         !- Program Line 1
+    Set chauff_ZCh3_EMS = 18,!- Program Line 2
+    ELSE,                    !- A4
+    Set chauff_ZCh3_EMS = 15,!- A5
+    ENDIF;                   !- A6
 
 
 !-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLEDICTIONARY ===========
