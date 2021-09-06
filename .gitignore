@@ -47,6 +47,9 @@ Thumbs.db
 .vs
 Results_To_Plot
 __pycache__
+*.expidf
+*.csv
+*.edd
 *.mdd
 *.rdd
 *.shd
