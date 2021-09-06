@@ -222,7 +222,6 @@ def heating_needs(result):
             table=result['table']
             #print(table[49])
             Chauffage = float(table[49][13])# [49][6] in EP v9.3   [49][13] in EP v9.5 pour simulation annuelle
-            logger.debug("In table.csv, %s kWh" % (Chauffage))
         return Chauffage
 
 def heating_needs_modified(result):
@@ -300,7 +299,8 @@ def evaluate_model(model, indb, surfacemat):
                      (model.idfname, indb, time.time() - start_time))
 
     logger.debug("Computing objectives from result dataframes")
-    heating = float(heating_needs(result))
+    heating = float(heating_needs(result))/config.building_area
+    logger.debug("In table.csv, %s kWh/m2" % (heating)) # kwh par m2
     comfort = float(overheating(result))
 
     logger.debug("%s hours of discomfort (where temperature is above Tconf+2°C) " % (comfort))
@@ -311,8 +311,8 @@ def evaluate_model(model, indb, surfacemat):
     logger.debug("computing operation price")
     operation = economy_operation(heating)
     logger.debug("Operation Price %s " % (operation))
-    total_price = investment + operation
-    logger.debug("Total Price %s " % (total_price))
+    total_price = (investment + operation)/config.building_area # euros par m2
+    logger.debug("Total Price %s euros/m2" % (total_price))
     return heating, comfort, total_price
 
 
