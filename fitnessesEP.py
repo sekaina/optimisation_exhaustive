@@ -314,7 +314,7 @@ def evaluate_model(model, indb, surfacemat):
     logger.debug("Operation Price %s " % (operation))
     total_price = investment + operation
     total_price_m2 = total_price/config.building_area # euros par m2
-    logger.debug("Total Price %s euros/m2" % (total_price))
+    logger.debug("Total Price %s euros/m2" % (total_price_m2))
     return heating_m2, comfort, total_price_m2
 
 
