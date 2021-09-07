@@ -299,8 +299,9 @@ def evaluate_model(model, indb, surfacemat):
                      (model.idfname, indb, time.time() - start_time))
 
     logger.debug("Computing objectives from result dataframes")
-    heating = float(heating_needs(result))/config.building_area
-    logger.debug("In table.csv, %s kWh/m2" % (heating)) # kwh par m2
+    heating = float(heating_needs(result))
+    heating_m2=heating/config.building_area
+    logger.debug("In table.csv, %s kWh, %s kWh/m2" % (heating, heating_m2)) # kwh par m2
     comfort = float(overheating(result))
 
     logger.debug("%s hours of discomfort (where temperature is above Tconf+2°C) " % (comfort))
@@ -311,9 +312,10 @@ def evaluate_model(model, indb, surfacemat):
     logger.debug("computing operation price")
     operation = economy_operation(heating)
     logger.debug("Operation Price %s " % (operation))
-    total_price = (investment + operation)/config.building_area # euros par m2
+    total_price = investment + operation
+    total_price_m2 = total_price/config.building_area # euros par m2
     logger.debug("Total Price %s euros/m2" % (total_price))
-    return heating, comfort, total_price
+    return heating_m2, comfort, total_price_m2
 
 
 def evaluate(ind):
