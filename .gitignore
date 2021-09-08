@@ -25,7 +25,8 @@
 
 # Logs and databases #
 ######################
-*.log
+*.log*
+*.pkl
 #*.sql
 *.sqlite
 
@@ -64,3 +65,6 @@ __pycache__
 *table.html
 *meter.csv
 *.rvaudit
+data*.txt
+*data*.txt
+pareto*.txt
