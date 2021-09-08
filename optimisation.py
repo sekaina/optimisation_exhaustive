@@ -473,6 +473,8 @@ if __name__ == "__main__":
     start_time = time.time()
     if not os.path.exists("./results"):
         os.makedirs("./results")
+    if not os.path.exists("./monitoring"):
+        os.makedirs("./monitoring")
     if os.path.exists("monitoring.csv"):
         os.remove("monitoring.csv")
     if os.path.exists("pareto_monitoring.csv"):
