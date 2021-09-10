@@ -49,6 +49,21 @@ def modify_SimulationConfig(IDFPATH, run):
         tree.write(xmlFile)
     copyfile(xmlFile, IDFPATH + "/results/SimulationConfig" + str(run)+'.xml')
     updateZip(IDFPATH+'agentFMU.fmu', 'SimulationConfig.xml', xmlFile)
+def save_result(simulation):
+    #import shutil
+    for file in simulation.working_dir.files("*"):
+        print (file.basename())
+        if ".dat" in file :
+            copyfile(file, IDFPATH + file.basename())#shutil.copy
+        if ".out" in file :
+            filename= os.path.splitext(file.basename())[0] #enlever l'extension du fichier
+            copyfile(file, ResultsPATH + filename + str(i) + ".out")
+        if "eplus.csv" in file :
+            filename= os.path.splitext(file.basename())[0]
+            copyfile(file, ResultsPATH + filename + str(i) + ".csv")
+        if "table.csv" in file :
+            filename= os.path.splitext(file.basename())[0]
+            copyfile(file, ResultsPATH + filename + str(i) + ".csv")
 def heating_needs(results):
     import csv
     print("Computing heating needs from result dataframes")
@@ -56,31 +71,45 @@ def heating_needs(results):
         if "table" in data:
             print("found table")
             table=results['table']
-            Chauffage = float(table[50][13])
+            print(table[49])
+            Chauffage =float(table[49][2])+float(table[49][3]) #float(table[49][13])
             print("In table.csv, %s kWh" % (Chauffage))
-        return Chauffage
+    return Chauffage
 
 def runmulti(IDFPATH, EPWFILE, IDDPATH, EPLUSPATH, model_name, fmu_name, numberOfSimulations):
     idf = IDFPATH + model_name
-    fmu_file = IDFPATH + fmu_name
+    
+    #define extra-files to be added to the temporary folder of running the idf model
+    fmu_file = IDFPATH + fmu_name#"C:/Users/se266887/No-MASS/Configuration/Officelearn/agentFMU.fmu"#
+    learning_files=[fmu_file]
+    if os.path.exists(IDFPATH+"eplus.rvi"):
+        learning_files.append(IDFPATH+"eplus.rvi")
+    if os.path.exists(IDFPATH+"Weekday-1-0.dat"):
+        learning_files.append(IDFPATH+"Weekday-1-0.dat")
+    if os.path.exists(IDFPATH+"Weekday-1-1.dat"):
+        learning_files.append(IDFPATH+"Weekday-1-1.dat")
+    if os.path.exists(IDFPATH+"Weekend-1-0.dat"):
+        learning_files.append(IDFPATH+"Weekend-1-0.dat")
+    if os.path.exists(IDFPATH+"Weekend-1-1.dat"):
+        learning_files.append(IDFPATH+"Weekend-1-1.dat")
+        
     #Eppy initialization
     IDF.setiddname(IDDPATH)
     model = IDF(idf, EPWFILE)
-    results_location=IDFPATH + "/results"
-    if not os.path.exists(results_location):
-        os.makedirs(results_location)
 
     heating_liste=[]
-
-    for run in range(0,numberOfSimulations):
+    global i
+    for run in range(0,numberOfSimulations):       
         print ("running simulation" + str(run))
         start_time = time.time()
-        modify_SimulationConfig(IDFPATH,run)
+        #modify_SimulationConfig(IDFPATH,run)
         runner = EPlusRunner(EPLUSPATH)
-        simulation = runner.run_one(model, EPWFILE, extra_file=fmu_file)
-        result=simulation.time_series
-        heating = float(heating_needs(result))
-        heating_liste.append(heating)
+        simulation = runner.run_one(model, EPWFILE, extra_files=learning_files, custom_process=save_result)
+        i+=1
+        #result=simulation.time_series # doesn't work if we define custom_process (to be included in the save_result function)
+        #heating = float(heating_needs(result))
+        #print(heating)
+        #heating_liste.append(heating)
         #p = subprocess.Popen(['C:/EnergyPlusV9-5-0/EnergyPlus.exe','-w', "CHAMBERY.epw", 'IDM_NoMASS.idf'], cwd=IDFPATH)
         #p.communicate()
         #copyfile(IDFPATH+'/eplustbl.htm', IDFPATH + "/results/eplustbl" + str(proc)+'.htm')
@@ -94,17 +123,17 @@ def runmulti(IDFPATH, EPWFILE, IDDPATH, EPLUSPATH, model_name, fmu_name, numberO
 if __name__ == "__main__":
     IDDPATH = config.IDDPATH
     EPLUSPATH = config.EPLUSPATH
-
-    IDFPATH = "./modelNoMASS/"
-    EPWFILE = IDFPATH + "CHAMBERY.epw"
-
-    model_name = 'IDM_NoMASS.idf'
-    fmu_name = "agentFMU.fmu"
-
-    numberOfSimulations=3
+    IDFPATH = "C:/Users/se266887/No-MASS/Configuration/Officelearn/"
+    ResultsPATH = IDFPATH + "results/"
+    if not os.path.exists(ResultsPATH):
+        os.makedirs(ResultsPATH)
+    #IDFPATH = r"C:\Users\\se266887\No-MASS\Configuration\OfficeLearn\\" #"C:/Users/se266887/Desktop/modelNoMASS/"
+    #EPWFILE = IDFPATH + "CHAMBERY.epw"
+    EPWFILE = IDFPATH + "in.epw"
+    #model_name = 'IDM_NoMASS.idf'
+    model_name = 'in.idf'
+    fmu_name = "agentFMU.fmu" 
+    i=0
+    numberOfSimulations=1
     runmulti(IDFPATH, EPWFILE, IDDPATH, EPLUSPATH, model_name, fmu_name, numberOfSimulations)
-    
-    
-    
-    #model.run(output_directory=IDFPATH) #run from eppy
     
