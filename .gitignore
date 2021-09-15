@@ -46,7 +46,9 @@ Thumbs.db
 *.json
 *.png
 .vs
+model/EPT*
 Results_To_Plot
+calculate_overhating
 __pycache__
 *.expidf
 *.csv
@@ -68,3 +70,4 @@ __pycache__
 data*.txt
 *data*.txt
 pareto*.txt
+*.dat
