@@ -1,1 +1,1 @@
-# optimisation-deterministe
+# optimisation-exhaustive
